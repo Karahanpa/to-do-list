@@ -1,13 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    width:60%;
+    height: 100vh;
+    margin: 30px auto;
+    background-color: #556B2F;
+    font-family: 'Quicksand', sans-serif;
+    font-size:1rem;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.main-container {
+    width:100%;
+    height:60vh;
+    margin: 20px auto;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.item {
+    width:30%;
+    height:100%;
+    text-align: center;
+    background-color: #607935;
+    border-radius: 20px;
+}
+
+.item input {
+    padding:4px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    font-size:1rem;
+    color:#333;
+}
+
+input::placeholder {
+    color: #999;
+  }
+  
+
+.item button {
+    margin-top: 20px;
+    border-radius: 20px;
+    padding:10px;
+    background-color: #7B9B44;
+    color:white;
+    border:0;
+}
+
+.item ul {
+    margin: 10px auto;
+    width:60%;
+    background-color: #7B9B44;
+    border-radius: 30px;
+}
+
+.item li {
+    list-style: none;
+    margin-left:-40px;
+    border-bottom:1px solid black;
+    padding: 10px 0;
+}
+
+.item ul li:last-child {
+    border-bottom: none;
 }
