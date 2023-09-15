@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 
 body {
-    width:60%;
-    height: 100vh;
+    width:70%;
+    height: 150vh;
     margin: 30px auto;
     background-color: #556B2F;
     font-family: 'Quicksand', sans-serif;
@@ -11,7 +11,7 @@ body {
 
 .main-container {
     width:100%;
-    height:60vh;
+    height:90vh;
     margin: 20px auto;
     display:flex;
     flex-direction: row;
@@ -25,6 +25,9 @@ body {
     text-align: center;
     background-color: #607935;
     border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .item input {
@@ -34,6 +37,7 @@ body {
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
     font-size:1rem;
     color:#333;
+    width:80%;
 }
 
 input::placeholder {
@@ -41,13 +45,20 @@ input::placeholder {
   }
   
 
-.item button {
+.item .add {
     margin-top: 20px;
     border-radius: 20px;
     padding:10px;
     background-color: #7B9B44;
     color:white;
     border:0;
+}
+
+.item .delete {
+    background-color: #7B9B44;
+    border:0;
+    border-radius: 20px;
+    width:10%;
 }
 
 .item ul {
@@ -62,6 +73,9 @@ input::placeholder {
     margin-left:-40px;
     border-bottom:1px solid black;
     padding: 10px 0;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .item ul li:last-child {
